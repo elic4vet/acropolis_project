@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The symbol of Athens 🏛️</title>
+  </head>
+
+  <style>
+    body {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      box-shadow: #ddd;
+      background: rgb(249, 249, 249);
+      background: linear-gradient(
+        90deg,
+        rgba(249, 249, 249, 1) 0%,
+        rgba(13, 94, 175, 1) 35%,
+        rgba(94, 135, 184, 1) 100%
+      );
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d5eaf;
+      background-color: white;
+      position: relative;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    h2 {
+      text-align: center;
+      border: 1px solid #0d5eaf;
+      line-height: 30px;
+      font-size: 18;
+      border-radius: 4px;
+      background-color: white;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 4px;
+      background-color: white;
+      position: relative;
+      box-sizing: border-box;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 14px;
+      margin: 10px 0 10px;
+      background-color: white;
+      position: relative;
+      box-sizing: border-box;
+      font-weight: normal;
+     text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+      background-color: #0d5eaf;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 15px 10px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 5px 5px 5px rgba (0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+      position: relative;
+      box-sizing: border-box;
+    }
+    .button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    a {
+      background-color: white;
+      position: relative;
+      box-sizing: border-box;
+      
+    }
+
+    .learn-more {
+      text-decoration: none;
+      color: #0d5eaf;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 15px 20px;
+      background-color: white;
+      border-radius: 10px;
+
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>The symbol of Athens</h1>
+      <h2>The Acropolis 🏛️</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/010/224/original/AthensPArthenon7.jpg?1622994366"
+        width="350"
+      />
+
+      <p>
+        <em> <strong> The Acropolis </strong> is probably the most important ancient
+        <span style="color: #0d5eaf; font-weight:bold;"> Greek </span> 
+        monument.</em> <br/>
+        This <span style="color: #000; font-weight:bold;"> 2,500-year-old </span> ruin city dominates <span style="color: #0d5eaf; font-weight:bold;"> Athens </span> from the top of
+        Acropolis Hill. And although the Parthenon Temple with its landmark
+        columns is the most famous monument on the hill, it is only one of the
+        many treasures the Acropolis has to offer. After years of restorations,
+        the palaces, columns and sculptures once again reflect the city’s  
+        splendour, power and wealth.
+      </p>
+      <a
+        href="https://www.klm.com/destinations/id/id/article/the-symbol-of-athens-the-acropolis"
+        target="_blank"
+        class="learn-more"
+      > <strong>
+        Learn more about Acropolis
+      </a></strong>
+
+      <button class="buy-button">👉 Buy a ticket to visit Acropolis</button>
+      <br /> <hr>
+      <p class="footer"> This page was built by Elisabeth Erkekoglou 👩‍💻</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name ?");
+        let age = prompt("How old are you ?");
+
+        if (age < 18) {
+        alert(" The ticket costs 10 €");
+      } else {
+        alert(" The ticket costs 20 €");
+      }
+    
+       let email = prompt("What is your email adress?");
+        alert(
+          "Thank you" +
+            " " +
+            name +
+            " " +
+            "We'll be in touch by email, meanwhile have a nice rest of the day!"
+        );
+         }
+      
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+ 
+    </script>
+  </body>
+</html>
